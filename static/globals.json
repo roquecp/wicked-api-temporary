@@ -63,12 +63,9 @@
     ]
   },
   "mailer": {
-    "useMailer": false,
     "senderEmail": "apiportal@yourcompany.com",
     "senderName": "The wicked API Portal",
     "smtpHost": "smtp.yourcompany.com",
-    "anonymous": false,
-    "forceSecure": false,
     "smtpPort": 465,
     "username": "smtpuser",
     "password": "smtppassword",

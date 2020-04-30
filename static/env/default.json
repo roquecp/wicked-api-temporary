@@ -10,7 +10,7 @@
   },
   "PORTAL_API_AESKEY": {
     "encrypted": true,
-    "value": "398c874052bf2ef750a84cb43c130ec6ff1f348f56b3560f3334cfaf2f5d21be9fa847eba1668070fbdedefcc8046c5b099c61d2cdcb5dda67481b593ce6d22f5df8add404709bf69ab891c68bb15dba"
+    "value": "3a8bd11454eb7cf553ac41e26646059dfe1d64d852b50306303a9af87c0e2fee9ff84cbea1358673fbdedefcc8046c5b099c61d2cdcb5dda67481b593ce6d22f5df8add404709bf69ab891c68bb15dba"
   },
   "PORTAL_API_DYNAMIC_CONFIG": {
     "encrypted": false,
@@ -72,7 +72,7 @@
     "value": "https"
   },
   "PORTAL_PLANS_BASIC_BASICAUTH": {
-    "value": "3d8a821654bc7ba052fd4ab233405292a842648b51e7540366319cf92f0d28eecbaf11baa0308f768f9c9ca69e4433440d8e3f8cc0c4798a72181b1f11b2d723",
+    "value": "3e8a864602bb7bf252a91bb436130490fc4b32df02e40106353bc9ad7e5c7ebe9faf45eea96784758f9c9ca69e4433440d8e3f8cc0c4798a72181b1f11b2d723",
     "encrypted": "true"
   },
   "PORTAL_PORTAL_URL": {
