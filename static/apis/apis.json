@@ -1,0 +1,118 @@
+{
+  "apis": [
+    {
+      "id": "test_wendell",
+      "name": "Pratique API",
+      "desc": "Endpoint do pratique",
+      "auth": "none",
+      "tags": [],
+      "plans": [
+        "basic",
+        "stupid",
+        "unlimited",
+        "godlike"
+      ],
+      "authMethods": [],
+      "requiredGroup": "",
+      "registrationPool": "",
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      }
+    },
+    {
+      "id": "authentication",
+      "name": "Authentication",
+      "desc": "Authentication",
+      "auth": "none",
+      "tags": [],
+      "plans": [
+        "basic",
+        "stupid",
+        "unlimited",
+        "godlike"
+      ],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "authorization",
+      "name": "Authorization",
+      "desc": "Serviço de autorização",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "requiredGroup": "",
+      "registrationPool": "",
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      }
+    },
+    {
+      "id": "notification",
+      "name": "Notification",
+      "desc": "Serviço de notificação",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "tenant",
+      "name": "Tenant",
+      "desc": "Serviço responsável pela gestão dos inquilinos.",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "user",
+      "name": "User",
+      "desc": "Serviço de usuários da plataforma senior X.",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/apis"
+    },
+    "plans": {
+      "href": "/plans"
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "4.12.0",
+    "title": "Autenticação",
+    "description": "Responsável pela autenticação na plataforma G7.",
+    "contact": {
+      "name": "Senior X Platform",
+      "url": "http://dev.senior.com.br",
+      "email": "seniorx-dev@senior.com.br"
+    }
+  },
+  "host": "api.senior.com.br",
+  "basePath": "/authentication/",
+  "securityDefinitions": {
+    "bearerAuth": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization"
+    }
+  },
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "paths": {
+    "/queries/tenantLoginSettings": {
+      "get": {
+        "description": "Obtém as configurações de login do tenant associado ao tenantDomain informado.",
+        "tags": [
+          "Endpoints"
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "tenantDomain",
+            "description": "Domínio do tenant que deve as informações de login retornadas.",
+            "in": "query",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "scope",
+            "description": "Escopo personalizado para login via SAML, utilizado por aplicações mobile",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "in": "header",
+            "name": "Accept",
+            "description": "Content types and endpoint version for the request. Example: application/json;seniorx.version=2",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "type": "object",
+              "required": [
+                "tenantName",
+                "cookieDomain",
+                "changePasswordSettings",
+                "rememberMeSettings",
+                "loginProviders",
+                "authenticationTypes"
+              ],
+              "properties": {
+                "tenantName": {
+                  "type": "string",
+                  "description": "Nome do tenant associado ao domínio informado."
+                },
+                "cookieDomain": {
+                  "type": "string",
+                  "description": "Dóminio em que os cookies utilizados pela plataforma devem estar associados."
+                },
+                "changePasswordSettings": {
+                  "type": "object",
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/changePasswordSettings"
+                    }
+                  ],
+                  "description": "Configurações de redefinição de senha."
+                },
+                "rememberMeSettings": {
+                  "type": "object",
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/rememberMeSettings"
+                    }
+                  ],
+                  "description": "Configurações de lembrar-me."
+                },
+                "loginProviders": {
+                  "type": "object",
+                  "allOf": [
+                    {
+                      "$ref": "#/definitions/loginProviders"
+                    }
+                  ],
+                  "description": "Provedores para realizar login."
+                },
+                "authenticationTypes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minimum": 1
+                  },
+                  "description": "Tipos de autenticação suportados"
+                },
+                "tenantDomain": {
+                  "type": "string",
+                  "description": "Domain do tenant, utilizado para quando é realizada a requisição usando o tenantName."
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Error response",
+            "schema": {
+              "$ref": "#/definitions/genericError"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "changePasswordSettings": {
+      "description": "Configurações de redefinição de senha.",
+      "type": "object",
+      "required": [
+        "allowed",
+        "url"
+      ],
+      "properties": {
+        "allowed": {
+          "type": "boolean",
+          "description": "Indica se é permitida a redefinição de senha."
+        },
+        "url": {
+          "type": "string",
+          "description": "Url da tela para redefinição de senha."
+        }
+      }
+    },
+    "rememberMeSettings": {
+      "description": "Configurações de lembrar-me.",
+      "type": "object",
+      "required": [
+        "allowed",
+        "expiration"
+      ],
+      "properties": {
+        "allowed": {
+          "type": "boolean",
+          "description": "Indica se é permitida a opção lembrar-me na tela de login."
+        },
+        "expiration": {
+          "type": "integer",
+          "format": "int64",
+          "description": "Tempo de vida (em horas) do cookie ao marcar a opção lembrar-me."
+        }
+      }
+    },
+    "loginProviders": {
+      "description": "Provedores de login.",
+      "type": "object",
+      "properties": {
+        "saml": {
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "#/definitions/samlProvider"
+            }
+          ],
+          "description": "Provedor de login SAML"
+        }
+      }
+    },
+    "samlProvider": {
+      "description": "Provedor de login SAML",
+      "type": "object",
+      "required": [
+        "url"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "Url para realizar login"
+        }
+      }
+    },
+    "genericError": {
+      "properties": {
+        "message": {
+          "type": "string",
+          "description": "Messaging describing the error."
+        },
+        "reason": {
+          "type": "string",
+          "description": "A symbolic code identifying the category of the reason of the error.",
+          "enum": [
+            "BAD_REQUEST",
+            "UNAUTHORIZED",
+            "PAYMENT_REQUIRED",
+            "FORBIDDEN",
+            "OBJECT_NOT_FOUND",
+            "REQUEST_TIMEOUT",
+            "GONE",
+            "UNPROCESSABLE",
+            "INTERNAL_ERROR",
+            "NOT_IMPLEMENTED",
+            "SERVICE_UNAVAILABLE",
+            "INSUFFICIENT_STORAGE"
+          ]
+        }
+      }
+    }
+  }
+}
