@@ -1,6 +1,6 @@
 {
   "api": {
-    "upstream_url": "https://platform-homologx.senior.com.br/t/senior.com.br/bridge/1.0/rest/platform/user",
+    "upstream_url": "https://platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/platform/user",
     "name": "user",
     "uris": [
       "/user"
