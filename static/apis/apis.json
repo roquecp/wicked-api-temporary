@@ -121,6 +121,22 @@
       },
       "requiredGroup": "",
       "registrationPool": ""
+    },
+    {
+      "id": "authenticationbeta",
+      "name": "Authentication Beta",
+      "desc": "Authentication Beta",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
     }
   ],
   "_links": {
