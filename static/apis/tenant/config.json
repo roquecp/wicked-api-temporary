@@ -3,7 +3,7 @@
     "upstream_url": "https://platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/platform/tenant",
     "name": "tenant",
     "uris": [
-      "/tenant"
+      "/platform/tenant"
     ],
     "strip_uri": true,
     "preserve_host": false,

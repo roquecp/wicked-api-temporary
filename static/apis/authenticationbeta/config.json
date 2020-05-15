@@ -3,7 +3,7 @@
     "upstream_url": "https://platform-beta.senior.com.br/t/senior.com.br/bridge/1.0/rest/platform/authentication",
     "name": "authenticationbeta",
     "uris": [
-      "/authenticationbeta"
+      "/platform/authenticationbeta"
     ],
     "strip_uri": true,
     "preserve_host": false,

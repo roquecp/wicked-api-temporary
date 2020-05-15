@@ -3,7 +3,7 @@
     "upstream_url": "https://platform-homologx.senior.com.br/t/senior.com.br/bridge/1.0/rest/platform/authentication",
     "name": "authenticationhom",
     "uris": [
-      "/authenticationhom"
+      "/platform/authenticationhom"
     ],
     "strip_uri": true,
     "preserve_host": false,
