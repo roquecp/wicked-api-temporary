@@ -137,6 +137,118 @@
       },
       "requiredGroup": "",
       "registrationPool": ""
+    },
+    {
+      "id": "entry",
+      "name": "Entry (HCM)",
+      "desc": "Lançamentos da Folha de Pagamentos",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "organization_register",
+      "name": "Organization Register (HCM)",
+      "desc": "Cadastros organizacionais",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "general_register",
+      "name": "General Register (HCM)",
+      "desc": "Cadastros Gerais do HCM",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "recruitment",
+      "name": "Recruitment",
+      "desc": "Recrutamento",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "payroll",
+      "name": "Payroll (HCM)",
+      "desc": "Folha de pagamento",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "application",
+      "name": "Application (SAM)",
+      "desc": "Backend do SAM",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "lobby",
+      "name": "Lobby (SAM)",
+      "desc": "Gestão de portaria",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
     }
   ],
   "_links": {

@@ -1,0 +1,23 @@
+{
+  "api": {
+    "upstream_url": "platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/sam/application",
+    "name": "application",
+    "uris": [
+      "/sam/application"
+    ],
+    "strip_uri": true,
+    "preserve_host": false,
+    "host": "$PORTAL_NETWORK_APIHOST"
+  },
+  "plugins": [
+    {
+      "name": "cors",
+      "config": {
+        "origins": [
+          "*"
+        ],
+        "methods": "GET,HEAD,PUT,PATCH,POST,DELETE"
+      }
+    }
+  ]
+}
