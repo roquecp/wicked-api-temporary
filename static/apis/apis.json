@@ -1,27 +1,6 @@
 {
   "apis": [
     {
-      "id": "test_wendell",
-      "name": "Pratique API",
-      "desc": "Endpoint do pratique",
-      "auth": "none",
-      "tags": [],
-      "plans": [
-        "basic",
-        "stupid",
-        "unlimited",
-        "godlike"
-      ],
-      "authMethods": [],
-      "requiredGroup": "",
-      "registrationPool": "",
-      "settings": {
-        "token_expiration": 3600,
-        "scopes": {},
-        "mandatory_scope": false
-      }
-    },
-    {
       "id": "authentication",
       "name": "Authentication",
       "desc": "Authentication",
@@ -188,7 +167,7 @@
     },
     {
       "id": "recruitment",
-      "name": "Recruitment",
+      "name": "Recruitment (HCM)",
       "desc": "Recrutamento",
       "auth": "none",
       "tags": [],
@@ -238,6 +217,54 @@
       "id": "lobby",
       "name": "Lobby (SAM)",
       "desc": "Gestão de portaria",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_fin_contas_pagar",
+      "name": "Contas a Pagar (ERPX)",
+      "desc": "Serviços de fatos financeiros",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_fin_contas_receber",
+      "name": "Contas a Receber (ERPX)",
+      "desc": "Serviço de Contas a Receber",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_sup_cpr_purchase_orders",
+      "name": "Pedidos de compra (ERPX)",
+      "desc": "Pedidos de compra",
       "auth": "none",
       "tags": [],
       "plans": [],

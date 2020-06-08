@@ -1,6 +1,6 @@
 {
   "api": {
-    "upstream_url": "platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/sam/application",
+    "upstream_url": "https://platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/sam/application",
     "name": "application",
     "uris": [
       "/sam/application"

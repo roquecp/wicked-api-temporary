@@ -1,9 +1,9 @@
 {
   "api": {
-    "upstream_url": "https://platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/sam/lobby",
-    "name": "lobby",
+    "upstream_url": "https://platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/erpx_fin/contas_pagar",
+    "name": "erpx_fin_contas_pagar",
     "uris": [
-      "/sam/lobby"
+      "/erpx_fin/contas_pagar"
     ],
     "strip_uri": true,
     "preserve_host": false,

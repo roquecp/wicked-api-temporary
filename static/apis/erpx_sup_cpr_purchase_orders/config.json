@@ -1,9 +1,9 @@
 {
   "api": {
-    "upstream_url": "https://platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/sam/lobby",
-    "name": "lobby",
+    "upstream_url": "https://platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/erpx_sup_cpr/purchase_orders",
+    "name": "erpx_sup_cpr_purchase_orders",
     "uris": [
-      "/sam/lobby"
+      "/erpx_sup_cpr/purchase_orders"
     ],
     "strip_uri": true,
     "preserve_host": false,
