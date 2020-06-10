@@ -276,6 +276,54 @@
       },
       "requiredGroup": "",
       "registrationPool": ""
+    },
+    {
+      "id": "hcm_dependent",
+      "name": "Dependent (HCM)",
+      "desc": "Gestão de dependentes",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_sup_rcb_nota_fiscal",
+      "name": "Notas fiscais de entrada (ERPX)",
+      "desc": "Notas fiscais de entrada",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_sup_cpr_foundation",
+      "name": "Foundation (ERPX_SUP_CPR)",
+      "desc": "Foundation (ERPX_SUP_CPR)",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
     }
   ],
   "_links": {
