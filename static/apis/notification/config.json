@@ -3,11 +3,21 @@
     "upstream_url": "https://platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/platform/notifications",
     "name": "notification",
     "uris": [
-      "/platform/notification"
+      "/platform/notifications"
     ],
     "strip_uri": true,
     "preserve_host": false,
     "host": "$PORTAL_NETWORK_APIHOST"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "cors",
+      "config": {
+        "origins": [
+          "*"
+        ],
+        "methods": "GET,HEAD,PUT,PATCH,POST,DELETE"
+      }
+    }
+  ]
 }

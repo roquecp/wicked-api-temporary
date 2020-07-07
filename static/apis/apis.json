@@ -39,7 +39,7 @@
     },
     {
       "id": "notification",
-      "name": "Notification",
+      "name": "Notifications",
       "desc": "Serviço de notificação",
       "auth": "none",
       "tags": [],
