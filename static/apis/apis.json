@@ -324,6 +324,22 @@
       },
       "requiredGroup": "",
       "registrationPool": ""
+    },
+    {
+      "id": "platform_workflow",
+      "name": "Workflow (platform)",
+      "desc": "Workflow (BPM)",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
     }
   ],
   "_links": {
