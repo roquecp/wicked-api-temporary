@@ -340,6 +340,22 @@
       },
       "requiredGroup": "",
       "registrationPool": ""
+    },
+    {
+      "id": "platform_blob_service",
+      "name": "Blob Service",
+      "desc": "Blob Service",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
     }
   ],
   "_links": {
