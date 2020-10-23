@@ -470,9 +470,9 @@
       "registrationPool": ""
     },
     {
-      "id": "hcm_vacancymanagement",
-      "name": "(HMC) VacancyManagement",
-      "desc": "(HMC) VacancyManagement",
+      "id": "hcm_pontomobile",
+      "name": "(HCM) PontoMobile",
+      "desc": "(HCM) PontoMobile",
       "auth": "none",
       "tags": [],
       "plans": [],
@@ -486,9 +486,9 @@
       "registrationPool": ""
     },
     {
-      "id": "hcm_pontomobile",
-      "name": "(HCM) PontoMobile",
-      "desc": "(HCM) PontoMobile",
+      "id": "hcm_vacationmanagement",
+      "name": "(HCM) Vacationmanagement",
+      "desc": "(HCM) Vacationmanagement",
       "auth": "none",
       "tags": [],
       "plans": [],

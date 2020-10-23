@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "hcm_vacancymanagement",
+    "title": "hcm_vacationmanagement",
     "version": "1.0.0"
   },
   "paths": {

@@ -1,9 +1,9 @@
 {
   "api": {
-    "upstream_url": "https://platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/hcm/vacancymanagement",
-    "name": "hcm_vacancymanagement",
+    "upstream_url": "https://platform.senior.com.br/t/senior.com.br/bridge/1.0/rest/hcm/vacationmanagement",
+    "name": "hcm_vacationmanagement",
     "uris": [
-      "/hcm/vacancymanagement"
+      "/hcm/vacationmanagement"
     ],
     "strip_uri": true,
     "preserve_host": false,
