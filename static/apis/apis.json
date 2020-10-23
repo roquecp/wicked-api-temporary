@@ -2,8 +2,8 @@
   "apis": [
     {
       "id": "authentication",
-      "name": "Authentication",
-      "desc": "Authentication",
+      "name": "(Platform) Authentication",
+      "desc": "(Platform) Authentication",
       "auth": "none",
       "tags": [],
       "plans": [
@@ -23,8 +23,8 @@
     },
     {
       "id": "authorization",
-      "name": "Authorization",
-      "desc": "Serviço de autorização",
+      "name": "(Platform) Authorization",
+      "desc": "(Platform) Authorization",
       "auth": "none",
       "tags": [],
       "plans": [],
@@ -39,8 +39,8 @@
     },
     {
       "id": "notification",
-      "name": "Notifications",
-      "desc": "Serviço de notificação",
+      "name": "(Platform) Notifications",
+      "desc": "(Platform) Notifications",
       "auth": "none",
       "tags": [],
       "plans": [],
@@ -55,8 +55,8 @@
     },
     {
       "id": "tenant",
-      "name": "Tenant",
-      "desc": "Serviço responsável pela gestão dos inquilinos.",
+      "name": "(Platform) Tenant",
+      "desc": "(Platform) Tenant",
       "auth": "none",
       "tags": [],
       "plans": [],
@@ -71,8 +71,8 @@
     },
     {
       "id": "user",
-      "name": "User",
-      "desc": "Serviço de usuários da plataforma senior X.",
+      "name": "(Platform) User",
+      "desc": "(Platform) User",
       "auth": "none",
       "tags": [],
       "plans": [],
@@ -119,7 +119,7 @@
     },
     {
       "id": "entry",
-      "name": "Entry (HCM)",
+      "name": "(HCM) Entry",
       "desc": "Lançamentos da Folha de Pagamentos",
       "auth": "none",
       "tags": [],
@@ -135,7 +135,7 @@
     },
     {
       "id": "organization_register",
-      "name": "Organization Register (HCM)",
+      "name": "(HCM) Organization Register",
       "desc": "Cadastros organizacionais",
       "auth": "none",
       "tags": [],
@@ -151,7 +151,7 @@
     },
     {
       "id": "general_register",
-      "name": "General Register (HCM)",
+      "name": "(HCM) General Register",
       "desc": "Cadastros Gerais do HCM",
       "auth": "none",
       "tags": [],
@@ -167,7 +167,7 @@
     },
     {
       "id": "recruitment",
-      "name": "Recruitment (HCM)",
+      "name": "(HCM) Recruitment",
       "desc": "Recrutamento",
       "auth": "none",
       "tags": [],
@@ -183,7 +183,7 @@
     },
     {
       "id": "payroll",
-      "name": "Payroll (HCM)",
+      "name": "(HCM) Payroll",
       "desc": "Folha de pagamento",
       "auth": "none",
       "tags": [],
@@ -199,7 +199,7 @@
     },
     {
       "id": "application",
-      "name": "Application (SAM)",
+      "name": "(SAM) Application",
       "desc": "Backend do SAM",
       "auth": "none",
       "tags": [],
@@ -215,7 +215,7 @@
     },
     {
       "id": "lobby",
-      "name": "Lobby (SAM)",
+      "name": "(SAM) Lobby",
       "desc": "Gestão de portaria",
       "auth": "none",
       "tags": [],
@@ -231,7 +231,7 @@
     },
     {
       "id": "erpx_fin_contas_pagar",
-      "name": "Contas a Pagar (ERPX)",
+      "name": "(ERPX_FIN) Contas a Pagar",
       "desc": "Serviços de fatos financeiros",
       "auth": "none",
       "tags": [],
@@ -247,7 +247,7 @@
     },
     {
       "id": "erpx_fin_contas_receber",
-      "name": "Contas a Receber (ERPX)",
+      "name": "(ERPX_FIN) Contas a Receber",
       "desc": "Serviço de Contas a Receber",
       "auth": "none",
       "tags": [],
@@ -263,7 +263,7 @@
     },
     {
       "id": "erpx_sup_cpr_purchase_orders",
-      "name": "Pedidos de compra (ERPX)",
+      "name": "(ERPX_SUP_CPR) Pedidos de compra",
       "desc": "Pedidos de compra",
       "auth": "none",
       "tags": [],
@@ -279,7 +279,7 @@
     },
     {
       "id": "hcm_dependent",
-      "name": "Dependent (HCM)",
+      "name": "(HCM) Dependent",
       "desc": "Gestão de dependentes",
       "auth": "none",
       "tags": [],
@@ -295,7 +295,7 @@
     },
     {
       "id": "erpx_sup_rcb_nota_fiscal",
-      "name": "Notas fiscais de entrada (ERPX)",
+      "name": "(ERPX_SUP_RCB) Notas fiscais de entrada",
       "desc": "Notas fiscais de entrada",
       "auth": "none",
       "tags": [],
@@ -311,7 +311,7 @@
     },
     {
       "id": "erpx_sup_cpr_foundation",
-      "name": "Foundation (ERPX_SUP_CPR)",
+      "name": "(ERPX_SUP_CPR) Foundation",
       "desc": "Foundation (ERPX_SUP_CPR)",
       "auth": "none",
       "tags": [],
@@ -327,7 +327,7 @@
     },
     {
       "id": "platform_workflow",
-      "name": "Workflow (platform)",
+      "name": "(Platform) Workflow",
       "desc": "Workflow (BPM)",
       "auth": "none",
       "tags": [],
@@ -343,8 +343,152 @@
     },
     {
       "id": "platform_blob_service",
-      "name": "Blob Service",
+      "name": "(Platform) Blob Service",
       "desc": "Blob Service",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_com_fat_invoicing",
+      "name": "(ERPX_COM_FAT) Invoicing",
+      "desc": "(ERPX_COM_FAT) Invoicing",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_com_fat_saleinvoice",
+      "name": "(ERPX_COM_FAT) SaleInvoice",
+      "desc": "(ERPX_COM_FAT) SaleInvoice",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_fin_tesouraria",
+      "name": "(ERPX_FIN) Tesouraria",
+      "desc": "(ERPX_FIN) Tesouraria",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_fnd_pessoa",
+      "name": "(ERPX_FND) Pessoa",
+      "desc": "(ERPX_FND) Pessoa",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_fnd_produto",
+      "name": "(ERPX_FND) Produto",
+      "desc": "(ERPX_FND) Produto",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_com_ven_foundation",
+      "name": "(ERPX_COM_VEN) Foundation",
+      "desc": "(ERPX_COM_VEN) Foundation",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "erpx_com_ven_pedido",
+      "name": "(ERPX_COM_VEN) Pedido",
+      "desc": "(ERPX_COM_VEN) Pedido",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "hcm_vacancymanagement",
+      "name": "(HMC) VacancyManagement",
+      "desc": "(HMC) VacancyManagement",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "hcm_pontomobile",
+      "name": "(HCM) PontoMobile",
+      "desc": "(HCM) PontoMobile",
       "auth": "none",
       "tags": [],
       "plans": [],
