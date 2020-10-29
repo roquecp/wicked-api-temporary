@@ -500,6 +500,38 @@
       },
       "requiredGroup": "",
       "registrationPool": ""
+    },
+    {
+      "id": "hcm_vacancymanagement",
+      "name": "(HCM) VacancyManagement",
+      "desc": "(HCM) VacancyManagement",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
+    },
+    {
+      "id": "hcm_remuneration",
+      "name": "(HCM) Remuneration",
+      "desc": "(HCM) Remuneration",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
     }
   ],
   "_links": {
