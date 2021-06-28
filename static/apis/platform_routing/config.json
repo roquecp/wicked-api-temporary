@@ -1,0 +1,23 @@
+{
+  "api": {
+    "upstream_url": "https://d3dtqlprpb.execute-api.us-east-1.amazonaws.com/Prod",
+    "name": "platform_routing",
+    "uris": [
+      "/platform/routing"
+    ],
+    "strip_uri": true,
+    "preserve_host": false,
+    "host": "$PORTAL_NETWORK_APIHOST"
+  },
+  "plugins": [
+    {
+      "name": "cors",
+      "config": {
+        "origins": [
+          "*"
+        ],
+        "methods": "GET,HEAD,PUT,PATCH,POST,DELETE"
+      }
+    }
+  ]
+}

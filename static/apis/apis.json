@@ -548,6 +548,22 @@
       },
       "requiredGroup": "",
       "registrationPool": ""
+    },
+    {
+      "id": "platform_routing",
+      "name": "(Platform) Routing",
+      "desc": "Roteirização",
+      "auth": "none",
+      "tags": [],
+      "plans": [],
+      "authMethods": [],
+      "settings": {
+        "token_expiration": 3600,
+        "scopes": {},
+        "mandatory_scope": false
+      },
+      "requiredGroup": "",
+      "registrationPool": ""
     }
   ],
   "_links": {
